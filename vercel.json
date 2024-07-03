@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+            "src": "tflite/app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes":[
+        {
+            "src": "/(.*)",
+            "dist": "tflite/app.py"
+        }
+    ]
+}
